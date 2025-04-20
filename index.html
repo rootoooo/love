@@ -1,223 +1,306 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>皮皮虾</title>
-<link rel="icon" type="jpge"href="https://im.gurl.eu.org/file/AgACAgEAAxkDAAIUUWd_xyKFSvPJ2QIkbc5QMCd79gWiAAL_rTEbl5EBRDBGmoz44374AQADAgADeAADNgQ.jpg" />
-<link type="text/css" rel="stylesheet" href="renxi/default.css">
-<script type="text/javascript" src="renxi/jquery.min.js"></script>
-<script type="text/javascript" src="renxi/jscex.min.js"></script>
-<script type="text/javascript" src="renxi/jscex-parser.js"></script>
-<script type="text/javascript" src="renxi/jscex-jit.js"></script>
-<script type="text/javascript" src="renxi/jscex-builderbase.min.js"></script>
-<script type="text/javascript" src="renxi/jscex-async.min.js"></script>
-<script type="text/javascript" src="renxi/jscex-async-powerpack.min.js"></script>
-<script type="text/javascript" src="renxi/functions.js" charset="utf-8"></script>
-<script type="text/javascript" src="renxi/love.js" charset="utf-8"></script>
-<style type="text/css">
-<!--
-.STYLE1 {
-	color: #666666
-}
--->
-</style>
-</head>
-<body>
-<audio autoplay="autopaly">
-  <source src="Pretty Woman.mp3" type="audio/mp3" />
-</audio>
-<div id="main">
-  <div id="error">Is the person who said at the beginning that she would stay with you until old age still here?</div>
-  <div id="wrap">
-    <div id="text">
-      <div id="code"> <font color="#FF0000"> <span class="say">忽有故人心上过</span><br>
-        <span class="say"></span><br>
-        <span class="say">回首山河已是秋</span><br>
-	<span class="say"></span><br>
-        <span class="say">他朝若是同淋雪</span><br>
-	<span class="say"></span><br>
-	<span class="say">此生也算共白头</span><br>
-	<span class="say"></span><br>
-        <span class="say">白头并非雪可替</span><br>
-	<span class="say"></span><br>
-        <span class="say">遇见已是上上签</span><br>
-	<span class="say"></span><br>
-        <span class="say">风吹雪散故人离</span><br>
-	<span class="say"></span><br>
-        <span class="say">陌路只当忆往年</span><br>
-	<span class="say"></span><br>
-        <span class="say"><span class="space"></span>皮皮虾</span> </font>
-        </p>
-      </div>
-    </div>
-    <div id="clock-box"> <span class="STYLE1"></span><font color="#33CC00">The Thief of Time</font> <span class="STYLE1">Steal our time</span>
-      <div id="clock"></div>
-    </div>
-    <canvas id="canvas" width="1100" height="680"></canvas>
-  </div>
-</div>
-<script>
-    </script>
-<script>
-    (function(){
-        var canvas = $('#canvas');
-		
-        if (!canvas[0].getContext) {
-            $("#error").show();
-            return false;        }
-
-        var width = canvas.width();
-        var height = canvas.height();        
-        canvas.attr("width", width);
-        canvas.attr("height", height);
-        var opts = {
-            seed: {
-                x: width / 2 - 20,
-                color: "rgb(190, 26, 37)",
-                scale: 2
-            },
-            branch: [
-                [535, 680, 570, 250, 500, 200, 30, 100, [
-                    [540, 500, 455, 417, 340, 400, 13, 100, [
-                        [450, 435, 434, 430, 394, 395, 2, 40]
-                    ]],
-                    [550, 445, 600, 356, 680, 345, 12, 100, [
-                        [578, 400, 648, 409, 661, 426, 3, 80]
-                    ]],
-                    [539, 281, 537, 248, 534, 217, 3, 40],
-                    [546, 397, 413, 247, 328, 244, 9, 80, [
-                        [427, 286, 383, 253, 371, 205, 2, 40],
-                        [498, 345, 435, 315, 395, 330, 4, 60]
-                    ]],
-                    [546, 357, 608, 252, 678, 221, 6, 100, [
-                        [590, 293, 646, 277, 648, 271, 2, 80]
-                    ]]
-                ]] 
-            ],
-            bloom: {
-                num: 700,
-                width: 1080,
-                height: 650,
-            },
-            footer: {
-                width: 1200,
-                height: 5,
-                speed: 10,
-            }
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>皮皮虾</title>
+    <link rel="icon" type="image/jpeg" href="https://im.gurl.eu.org/file/AgACAgEAAxkDAAIUUWd_xyKFSvPJ2QIkbc5QMCd79gWiAAL_rTEbl5EBRDBGmoz44374AQADAgADeAADNgQ.jpg" />
+    <link type="text/css" rel="stylesheet" href="renxi/default.css">
+    <script type="text/javascript" src="renxi/jquery.min.js"></script>
+    <script type="text/javascript" src="renxi/jscex.min.js"></script>
+    <script type="text/javascript" src="renxi/jscex-parser.js"></script>
+    <script type="text/javascript" src="renxi/jscex-jit.js"></script>
+    <script type="text/javascript" src="renxi/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="renxi/jscex-async.min.js"></script>
+    <script type="text/javascript" src="renxi/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="renxi/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="renxi/love.js" charset="utf-8"></script>
+    <style type="text/css">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
         }
 
-        var tree = new Tree(canvas[0], width, height, opts);
-        var seed = tree.seed;
-        var foot = tree.footer;
-        var hold = 1;
+        #main {
+            text-align: center;
+        }
 
-        canvas.click(function(e) {
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            if (seed.hover(x, y)) {
-                hold = 0; 
-                canvas.unbind("click");
-                canvas.unbind("mousemove");
-                canvas.removeClass('hand');
-            }
-        }).mousemove(function(e){
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            canvas.toggleClass('hand', seed.hover(x, y));
-        });
+        #error {
+            font-size: 24px;
+            color: #b30000;
+            margin-top: 20px;
+            display: none;
+        }
 
-        var seedAnimate = eval(Jscex.compile("async", function () {
-            seed.draw();
-            while (hold) {
-                $await(Jscex.Async.sleep(10));
+        #wrap {
+            margin-top: 30px;
+        }
+
+        #text {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #333;
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        #code .say {
+            font-size: 24px;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #code .space {
+            margin-left: 20px;
+        }
+
+        #clock-box {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        #clock {
+            font-size: 22px;
+            font-weight: bold;
+            color: #33CC00;
+        }
+
+        #canvas {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        .STYLE1 {
+            color: #666666;
+        }
+
+        .hand {
+            cursor: pointer;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .footer {
+            font-size: 16px;
+            color: #999;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #33CC00;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="You Are Not Alone.mp3" type="audio/mp3" />
+    </audio>
+
+    <div id="main">
+        <div id="error">曾经沧海难为水，除却巫山不是云。取次花丛懒回顾，半缘修道半缘君。</div>
+        <div id="wrap">
+            <div id="text">
+                <div id="code">
+                    <font color="#FF0000">
+                        <span class="say">忽有故人心上过</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">回首山河已是秋</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">他朝若是同淋雪</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">此生也算共白头</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">白头并非雪可替</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">遇见已是上上签</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">风吹雪散故人离</span><br>
+                        <span class="say"></span><br>
+                        <span class="say">陌路只当忆往年</span><br>
+                        <span class="say"></span><br>
+                        <span class="say"><span class="space"></span>皮皮虾</span>
+                    </font>
+                </div>
+            </div>
+            <div id="clock-box">
+                <span class="STYLE1"></span>
+                <font color="#33CC00">The Thief of Time</font> 
+                <span class="STYLE1">Steal our time</span>
+                <div id="clock"></div>
+            </div>
+            <canvas id="canvas" width="1100" height="680"></canvas>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            var canvas = $('#canvas');
+            if (!canvas[0].getContext) {
+                $("#error").show();
+                return false;
             }
-            while (seed.canScale()) {
-                seed.scale(0.95);
-                $await(Jscex.Async.sleep(10));
+
+            var width = canvas.width();
+            var height = canvas.height();
+            canvas.attr("width", width);
+            canvas.attr("height", height);
+
+            var opts = {
+                seed: {
+                    x: width / 2 - 20,
+                    color: "rgb(190, 26, 37)",
+                    scale: 2
+                },
+                branch: [
+                    [535, 680, 570, 250, 500, 200, 30, 100, [
+                        [540, 500, 455, 417, 340, 400, 13, 100, [
+                            [450, 435, 434, 430, 394, 395, 2, 40]
+                        ]],
+                        [550, 445, 600, 356, 680, 345, 12, 100, [
+                            [578, 400, 648, 409, 661, 426, 3, 80]
+                        ]],
+                        [539, 281, 537, 248, 534, 217, 3, 40],
+                        [546, 397, 413, 247, 328, 244, 9, 80, [
+                            [427, 286, 383, 253, 371, 205, 2, 40],
+                            [498, 345, 435, 315, 395, 330, 4, 60]
+                        ]],
+                        [546, 357, 608, 252, 678, 221, 6, 100, [
+                            [590, 293, 646, 277, 648, 271, 2, 80]
+                        ]]
+                    ]]
+                ],
+                bloom: {
+                    num: 700,
+                    width: 1080,
+                    height: 650,
+                },
+                footer: {
+                    width: 1200,
+                    height: 5,
+                    speed: 10,
+                }
             }
-            while (seed.canMove()) {
-                seed.move(0, 2);
+
+            var tree = new Tree(canvas[0], width, height, opts);
+            var seed = tree.seed;
+            var foot = tree.footer;
+            var hold = 1;
+
+            canvas.click(function(e) {
+                var offset = canvas.offset(), x, y;
+                x = e.pageX - offset.left;
+                y = e.pageY - offset.top;
+                if (seed.hover(x, y)) {
+                    hold = 0;
+                    canvas.unbind("click");
+                    canvas.unbind("mousemove");
+                    canvas.removeClass('hand');
+                }
+            }).mousemove(function(e) {
+                var offset = canvas.offset(), x, y;
+                x = e.pageX - offset.left;
+                y = e.pageY - offset.top;
+                canvas.toggleClass('hand', seed.hover(x, y));
+            });
+
+            var seedAnimate = eval(Jscex.compile("async", function () {
+                seed.draw();
+                while (hold) {
+                    $await(Jscex.Async.sleep(10));
+                }
+                while (seed.canScale()) {
+                    seed.scale(0.95);
+                    $await(Jscex.Async.sleep(10));
+                }
+                while (seed.canMove()) {
+                    seed.move(0, 2);
+                    foot.draw();
+                    $await(Jscex.Async.sleep(10));
+                }
+            }));
+
+            var growAnimate = eval(Jscex.compile("async", function () {
+                do {
+                    tree.grow();
+                    $await(Jscex.Async.sleep(10));
+                } while (tree.canGrow());
+            }));
+
+            var flowAnimate = eval(Jscex.compile("async", function () {
+                do {
+                    tree.flower(2);
+                    $await(Jscex.Async.sleep(10));
+                } while (tree.canFlower());
+            }));
+
+            var moveAnimate = eval(Jscex.compile("async", function () {
+                tree.snapshot("p1", 240, 0, 610, 680);
+                while (tree.move("p1", 500, 0)) {
+                    foot.draw();
+                    $await(Jscex.Async.sleep(10));
+                }
                 foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
-        }));
+                tree.snapshot("p2", 500, 0, 610, 680);
 
-        var growAnimate = eval(Jscex.compile("async", function () {
-            do {
-    	        tree.grow();
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canGrow());
-        }));
+                canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+                canvas.css("background", "#ffe");
+                $await(Jscex.Async.sleep(300));
+                canvas.css("background", "none");
+            }));
 
-        var flowAnimate = eval(Jscex.compile("async", function () {
-            do {
-    	        tree.flower(2);
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canFlower());
-        }));
+            var jumpAnimate = eval(Jscex.compile("async", function () {
+                var ctx = tree.ctx;
+                while (true) {
+                    tree.ctx.clearRect(0, 0, width, height);
+                    tree.jump();
+                    foot.draw();
+                    $await(Jscex.Async.sleep(25));
+                }
+            }));
 
-        var moveAnimate = eval(Jscex.compile("async", function () {
-            tree.snapshot("p1", 240, 0, 610, 680);
-            while (tree.move("p1", 500, 0)) {
-                foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
-            foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+            var textAnimate = eval(Jscex.compile("async", function () {
+                var together = new Date();
+                together.setFullYear(2011, 12, 7);  //时间年月日
+                together.setHours(0);               //小时
+                together.setMinutes(0);             //分钟
+                together.setSeconds(0);             //秒前一位
+                together.setMilliseconds(2);        //秒第二位
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
-            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-            canvas.css("background", "#ffe");
-            $await(Jscex.Async.sleep(300));
-            canvas.css("background", "none");
-        }));
+                $("#code").show().typewriter();
+                $("#clock-box").fadeIn(500);
+                while (true) {
+                    timeElapse(together);
+                    $await(Jscex.Async.sleep(1000));
+                }
+            }));
 
-        var jumpAnimate = eval(Jscex.compile("async", function () {
-            var ctx = tree.ctx;
-            while (true) {
-                tree.ctx.clearRect(0, 0, width, height);
-                tree.jump();
-                foot.draw();
-                $await(Jscex.Async.sleep(25));
-            }
-        }));
+            var runAsync = eval(Jscex.compile("async", function () {
+                $await(seedAnimate());
+                $await(growAnimate());
+                $await(flowAnimate());
+                $await(moveAnimate());
 
-        var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2011,12,7); 			//时间年月日
-		    together.setHours(0);						//小时	
-		    together.setMinutes(0);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
+                textAnimate().start();
 
-		    $("#code").show().typewriter();
-            $("#clock-box").fadeIn(500);
-            while (true) {
-                timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
-            }
-        }));
+                $await(jumpAnimate());
+            }));
 
-        var runAsync = eval(Jscex.compile("async", function () {
-            $await(seedAnimate());
-            $await(growAnimate());
-            $await(flowAnimate());
-            $await(moveAnimate());
-
-            textAnimate().start();
-
-            $await(jumpAnimate());
-        }));
-
-        runAsync().start();
-    })();
+            runAsync().start();
+        })();
     </script>
 
-<div style="text-align:center;">
-<p>皮皮虾：<a href="index.html" title="皮皮虾">Is the person who said at the beginning that she would stay with you until old age still here?</a></p>
-</div>
-
+    <div class="footer" style="text-align:center;">
+        <p>皮皮虾：<a href="index.html" title="皮皮虾">Is the person who said at the beginning that she would stay with you until old age still here?</a></p>
+    </div>
 </body>
 </html>
