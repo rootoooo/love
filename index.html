@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>皮皮虾</title>
-<link rel="icon" type="jpge" href="https://im.gurl.eu.org/file/AgACAgEAAxkDAAIUUWd_xyKFSvPJ2QIkbc5QMCd79gWiAAL_rTEbl5EBRDBGmoz44374AQADAgADeAADNgQ.jpg" />
+<link rel="icon" type="jpge"href="https://im.gurl.eu.org/file/AgACAgEAAxkDAAIUUWd_xyKFSvPJ2QIkbc5QMCd79gWiAAL_rTEbl5EBRDBGmoz44374AQADAgADeAADNgQ.jpg" />
 <link type="text/css" rel="stylesheet" href="renxi/default.css">
 <script type="text/javascript" src="renxi/jquery.min.js"></script>
 <script type="text/javascript" src="renxi/jscex.min.js"></script>
@@ -17,49 +17,37 @@
 <style type="text/css">
 <!--
 .STYLE1 {
-    color: #666666;
-}
-
-/* 优化后的诗词字体样式 */
-.poem {
-    font-family: "Microsoft YaHei", "SimSun", sans-serif;
-    font-size: 1.5em; /* 字体大小 */
-    color: #FFFFFF; /* 字体颜色 */
-    line-height: 1.8; /* 行间距 */
-    text-align: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 字体阴影效果 */
-    margin-bottom: 20px;
-}
-
-.poem .say {
-    display: block;
-    margin: 10px 0;
+	color: #666666
 }
 -->
 </style>
 </head>
 <body>
-<audio autoplay="autoplay">
+<audio autoplay="autopaly">
   <source src="Pretty Woman.mp3" type="audio/mp3" />
 </audio>
 <div id="main">
-  <div id="error">Your presence is like a painting</div>
+  <div id="error">Is the person who said at the beginning that she would stay with you until old age still here?</div>
   <div id="wrap">
-    <div id="text" class="poem">
-      <!-- 保持原来的结构，但进行了字体优化 -->
-      <div id="code"> 
-        <font color="#FF0000"> 
-          <span class="say">卿至如画</span>
-          <span class="say"></span><br>
-          <span class="say">卿至风来白卉香</span><br>
-          <span class="say"></span><br>
-          <span class="say">四序因卿韶景长</span><br>
-          <span class="say"></span><br>
-          <span class="say">山川万里皆图画</span><br>
-          <span class="say"></span><br>
-          <span class="say">未及卿颜半分妆</span><br>
-          <span class="say"></span><br>
-        </font>
+    <div id="text">
+      <div id="code"> <font color="#FF0000"> <span class="say">忽有故人心上过</span><br>
+        <span class="say"></span><br>
+        <span class="say">回首山河已是秋</span><br>
+	<span class="say"></span><br>
+        <span class="say">他朝若是同淋雪</span><br>
+	<span class="say"></span><br>
+	<span class="say">此生也算共白头</span><br>
+	<span class="say"></span><br>
+        <span class="say">白头并非雪可替</span><br>
+	<span class="say"></span><br>
+        <span class="say">遇见已是上上签</span><br>
+	<span class="say"></span><br>
+        <span class="say">风吹雪散故人离</span><br>
+	<span class="say"></span><br>
+        <span class="say">陌路只当忆往年</span><br>
+	<span class="say"></span><br>
+        <span class="say"><span class="space"></span>皮皮虾</span> </font>
+        </p>
       </div>
     </div>
     <div id="clock-box"> <span class="STYLE1"></span><font color="#33CC00">The Thief of Time</font> <span class="STYLE1">Stole time, stole you</span>
@@ -68,15 +56,15 @@
     <canvas id="canvas" width="1100" height="680"></canvas>
   </div>
 </div>
-
+<script>
+    </script>
 <script>
     (function(){
         var canvas = $('#canvas');
-        
+		
         if (!canvas[0].getContext) {
             $("#error").show();
-            return false;
-        }
+            return false;        }
 
         var width = canvas.width();
         var height = canvas.height();        
@@ -158,14 +146,14 @@
 
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
-                tree.grow();
+    	        tree.grow();
                 $await(Jscex.Async.sleep(10));
             } while (tree.canGrow());
         }));
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
-                tree.flower(2);
+    	        tree.flower(2);
                 $await(Jscex.Async.sleep(10));
             } while (tree.canFlower());
         }));
@@ -197,14 +185,14 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-            var together = new Date();
-            together.setFullYear(2011,12,7);             //时间年月日
-            together.setHours(0);                         //小时   
-            together.setMinutes(0);                       //分钟
-            together.setSeconds(0);                       //秒前一位
-            together.setMilliseconds(2);                  //秒第二位
+		    var together = new Date();
+		    together.setFullYear(2011,12,7); 			//时间年月日
+		    together.setHours(0);						//小时	
+		    together.setMinutes(0);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(2);				//秒第二位
 
-            $("#code").show().typewriter();
+		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {
                 timeElapse(together);
@@ -225,10 +213,10 @@
 
         runAsync().start();
     })();
-</script>
+    </script>
 
 <div style="text-align:center;">
-<p>皮皮虾：<a href="index.html" title="皮皮虾">Your presence is like a painting</a></p>
+<p>皮皮虾：<a href="index.html" title="皮皮虾">Is the person who said at the beginning that she would stay with you until old age still here?</a></p>
 </div>
 
 </body>
