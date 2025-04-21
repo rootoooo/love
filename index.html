@@ -20,17 +20,19 @@
     color: #666666;
 }
 
+/* 优化后的诗词字体样式 */
 .poem {
     font-family: "Microsoft YaHei", "SimSun", sans-serif;
-    font-size: 1.5em; /* 字体大小可以根据需要调整 */
+    font-size: 1.5em; /* 字体大小 */
     color: #FFFFFF; /* 字体颜色 */
     line-height: 1.8; /* 行间距 */
     text-align: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加文本阴影效果 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 字体阴影效果 */
     margin-bottom: 20px;
 }
 
-.poem .line {
+.poem .say {
+    display: block;
     margin: 10px 0;
 }
 -->
@@ -44,9 +46,21 @@
   <div id="error">Your presence is like a painting</div>
   <div id="wrap">
     <div id="text" class="poem">
-      <div class="line">卿至如画</div>
-      <div class="line">卿至风来白卉香，四序因卿韶景长。</div>
-      <div class="line">山川万里皆图画，未及卿颜半分妆。</div>
+      <!-- 保持原来的结构，但进行了字体优化 -->
+      <div id="code"> 
+        <font color="#FF0000"> 
+          <span class="say">卿至如画</span>
+          <span class="say"></span><br>
+          <span class="say">卿至风来白卉香</span><br>
+          <span class="say"></span><br>
+          <span class="say">四序因卿韶景长</span><br>
+          <span class="say"></span><br>
+          <span class="say">山川万里皆图画</span><br>
+          <span class="say"></span><br>
+          <span class="say">未及卿颜半分妆</span><br>
+          <span class="say"></span><br>
+        </font>
+      </div>
     </div>
     <div id="clock-box"> <span class="STYLE1"></span><font color="#33CC00">The Thief of Time</font> <span class="STYLE1">Stole time, stole you</span>
       <div id="clock"></div>
@@ -214,7 +228,7 @@
 </script>
 
 <div style="text-align:center;">
-  <p>皮皮虾：<a href="index.html" title="皮皮虾">Your presence is like a painting</a></p>
+<p>皮皮虾：<a href="index.html" title="皮皮虾">Your presence is like a painting</a></p>
 </div>
 
 </body>
