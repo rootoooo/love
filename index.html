@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>皮皮虾</title>
-<link rel="icon" type="jpge"href="https://im.gurl.eu.org/file/AgACAgEAAxkDAAIUUWd_xyKFSvPJ2QIkbc5QMCd79gWiAAL_rTEbl5EBRDBGmoz44374AQADAgADeAADNgQ.jpg" />
+<link rel="icon" type="jpge" href="https://im.gurl.eu.org/file/AgACAgEAAxkDAAIUUWd_xyKFSvPJ2QIkbc5QMCd79gWiAAL_rTEbl5EBRDBGmoz44374AQADAgADeAADNgQ.jpg" />
 <link type="text/css" rel="stylesheet" href="renxi/default.css">
 <script type="text/javascript" src="renxi/jquery.min.js"></script>
 <script type="text/javascript" src="renxi/jscex.min.js"></script>
@@ -17,32 +17,36 @@
 <style type="text/css">
 <!--
 .STYLE1 {
-	color: #666666
+    color: #666666;
+}
+
+.poem {
+    font-family: "Microsoft YaHei", "SimSun", sans-serif;
+    font-size: 1.5em; /* 字体大小可以根据需要调整 */
+    color: #FFFFFF; /* 字体颜色 */
+    line-height: 1.8; /* 行间距 */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加文本阴影效果 */
+    margin-bottom: 20px;
+}
+
+.poem .line {
+    margin: 10px 0;
 }
 -->
 </style>
 </head>
 <body>
-<audio autoplay="autopaly">
+<audio autoplay="autoplay">
   <source src="Pretty Woman.mp3" type="audio/mp3" />
 </audio>
 <div id="main">
   <div id="error">Your presence is like a painting</div>
   <div id="wrap">
-    <div id="text">
-      <div id="code"> <font color="#FF0000"> <span class="say">卿至如画</span><br>
-        <span class="say"></span><br>
-        <span class="say">卿至风来白卉香</span><br>
-	<span class="say"></span><br>
-        <span class="say">四序因卿韶景长</span><br>
-	<span class="say"></span><br>
-        <span class="say">山川万里皆图画</span><br>
-	<span class="say"></span><br>
-	<span class="say">未及卿颜半分妆</span><br>
-	<span class="say"></span><br>
-        <span class="say"><span class="space"></span>皮皮虾</span> </font>
-        </p>
-      </div>
+    <div id="text" class="poem">
+      <div class="line">卿至如画</div>
+      <div class="line">卿至风来白卉香，四序因卿韶景长。</div>
+      <div class="line">山川万里皆图画，未及卿颜半分妆。</div>
     </div>
     <div id="clock-box"> <span class="STYLE1"></span><font color="#33CC00">The Thief of Time</font> <span class="STYLE1">Stole time, stole you</span>
       <div id="clock"></div>
@@ -50,15 +54,15 @@
     <canvas id="canvas" width="1100" height="680"></canvas>
   </div>
 </div>
-<script>
-    </script>
+
 <script>
     (function(){
         var canvas = $('#canvas');
-		
+        
         if (!canvas[0].getContext) {
             $("#error").show();
-            return false;        }
+            return false;
+        }
 
         var width = canvas.width();
         var height = canvas.height();        
@@ -140,14 +144,14 @@
 
         var growAnimate = eval(Jscex.compile("async", function () {
             do {
-    	        tree.grow();
+                tree.grow();
                 $await(Jscex.Async.sleep(10));
             } while (tree.canGrow());
         }));
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
-    	        tree.flower(2);
+                tree.flower(2);
                 $await(Jscex.Async.sleep(10));
             } while (tree.canFlower());
         }));
@@ -179,14 +183,14 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2011,12,7); 			//时间年月日
-		    together.setHours(0);						//小时	
-		    together.setMinutes(0);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
+            var together = new Date();
+            together.setFullYear(2011,12,7);             //时间年月日
+            together.setHours(0);                         //小时   
+            together.setMinutes(0);                       //分钟
+            together.setSeconds(0);                       //秒前一位
+            together.setMilliseconds(2);                  //秒第二位
 
-		    $("#code").show().typewriter();
+            $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
             while (true) {
                 timeElapse(together);
@@ -207,10 +211,10 @@
 
         runAsync().start();
     })();
-    </script>
+</script>
 
 <div style="text-align:center;">
-<p>皮皮虾：<a href="index.html" title="皮皮虾">Your presence is like a painting</a></p>
+  <p>皮皮虾：<a href="index.html" title="皮皮虾">Your presence is like a painting</a></p>
 </div>
 
 </body>
